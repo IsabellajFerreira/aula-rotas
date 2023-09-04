@@ -1,22 +1,18 @@
 import './style.css'
+import iphone from '../../assets/iphone.png'
+import tablet from '../../assets/tablet.png'
 
-export default function Home(){
-
-    return(
-       
-      <div className="home">
-      <h1>Bem-vindo à nossa loja de Smartphones e Tablets!</h1>
-
-      <div className="promo-card">
-        <div className="promo-image">
-          <img
-            src="#"  
-            alt="Promoção 1"
-          />
+const Home = () => {
+  return (
+    <div className="home">
+    <h1>Bem-vindo à nossa loja de Smartphones e Tablets iBella!</h1>
+    <div className="promo-card">
+     <div className="promo-image">
+        <img src={iphone} alt="Promoção 1"/>
         </div>
         <div className="promo-details">
           <p className="promo-description">
-            Promoção especial: Smartphone de última geração por apenas R$999,99!
+           Promoção especial: Smartphone de última geração por apenas R$999,99!
           </p>
           <button className="promo-button">Comprar Agora</button>
         </div>
@@ -24,10 +20,7 @@ export default function Home(){
 
       <div className="promo-card">
         <div className="promo-image">
-          <img
-            src="#" 
-            alt="Promoção 2"
-          />
+          <img src={tablet} alt="Promoção 2"/>
         </div>
         <div className="promo-details">
           <p className="promo-description">
@@ -38,4 +31,6 @@ export default function Home(){
       </div>
     </div>
   );
-}
+};
+
+export default Home;
