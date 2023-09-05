@@ -12,7 +12,7 @@ const Home = () => {
         </div>
         <div className="promo-details">
           <p className="promo-description">
-           Promoção especial: Smartphone de última geração por apenas R$999,99!
+          Promoção especial: Smartphone de última geração por apenas R$999,99!
           </p>
           <button className="promo-button">Comprar Agora</button>
         </div>
